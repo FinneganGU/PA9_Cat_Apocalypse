@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\",
+  "WorkspaceRootPath": "C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,20 +18,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-21T21:33:03.466Z",
+              "Title": "Player.hpp",
+              "DocumentMoniker": "C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Player.hpp",
+              "RelativeDocumentMoniker": "Player.hpp",
+              "ToolTip": "C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Player.hpp",
+              "RelativeToolTip": "Player.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-24T23:53:33.54Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\12066\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T21:33:03.466Z"
             }
           ]
         }
