@@ -27,4 +27,36 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Sprites\cat_mf_flip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\cat_mf_noflip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\cat_nomf_flip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\cat_nomf_noflip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\explosion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\fox_mf_flip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\fox_mf_noflip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\fox_nomf_flip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\fox_nomf_noflip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\landmine.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

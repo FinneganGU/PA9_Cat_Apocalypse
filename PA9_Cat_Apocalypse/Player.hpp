@@ -5,19 +5,37 @@
 class Player : public Character
 {
 public:
-	Player(sf::Vector2f size, float newMoveSpeed) : Character(size, newMoveSpeed)
+	Player(sf::Vector2f newSize, float newMoveSpeed) : Character(newSize, newMoveSpeed)
 	{
-		isJumping = false;
-		sf::Texture texture("Sprites/cat_nomf_flip");
-		sf::Sprite player(texture);
+		/*sf::Texture texture("cat_nomf_flip.png");
+		sf::Sprite player(texture);*/
 	}
 
 	void jump()
 	{
-		hitbox.move({ 0,50 });
-		isJumping = true;
+		if (onGround = true)
+		{
+			hitbox.move({ 0, -moveSpeed });
+			onGround = false;
+		}
+	}
+
+	void moveLeft()
+	{
+		if(onGround = true)
+		{
+			move({ -moveSpeed, 0 });
+		}
+	}
+
+	void moveRight()
+	{
+		if (onGround = true)
+		{
+			move({ moveSpeed, 0 });
+		}
 	}
 
 private:
-	bool isJumping;
+	sf::Texture texture;
 };

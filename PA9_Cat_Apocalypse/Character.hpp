@@ -5,9 +5,11 @@
 class Character
 {
 public:
-	Character(sf::Vector2f size, float newMoveSpeed) {
-		hitbox.setSize(size);
+	Character(sf::Vector2f newSize, float newMoveSpeed) {
+		hitbox.setSize(newSize);
+		hitbox.setFillColor(sf::Color::Blue);
 		moveSpeed = newMoveSpeed;
+		onGround = true;
 	}
 
 	void drawTo(sf::RenderWindow& window) {
@@ -31,7 +33,19 @@ public:
 		return hitbox.getPosition().y;
 	}
 
+	float getMoveSpeed() { return moveSpeed; }
+
+	bool isOnGround() {
+		return onGround;
+	}
+
+	void setOnGround(bool newOnGround)
+	{
+		onGround = newOnGround;
+	}
+
 protected:
 	sf::RectangleShape hitbox;
 	float moveSpeed;
+	bool onGround;
 };
