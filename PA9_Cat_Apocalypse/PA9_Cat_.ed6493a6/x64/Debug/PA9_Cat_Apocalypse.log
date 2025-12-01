@@ -1,16 +1,17 @@
 ﻿  main.cpp
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244: 'return': conversion from 'T' to 'int', possible loss of data
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:         with
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:         [
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:             T=float
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:         ]
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244: 'return': conversion from 'T' to 'int', possible loss of data
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:         with
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:         [
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:             T=float
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(29,30): warning C4244:         ]
   (compiling source file 'main.cpp')
   
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244: 'return': conversion from 'T' to 'int', possible loss of data
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:         with
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:         [
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:             T=float
-C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:         ]
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244: 'return': conversion from 'T' to 'int', possible loss of data
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:         with
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:         [
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:             T=float
+C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\Character.hpp(33,30): warning C4244:         ]
   (compiling source file 'main.cpp')
   
-  PA9_Cat_Apocalypse.vcxproj -> C:\Users\12066\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Debug\PA9_Cat_Apocalypse.exe
+  LINK : C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Debug\PA9_Cat_Apocalypse.exe not found or not built by the last incremental link; performing full link
+  PA9_Cat_Apocalypse.vcxproj -> C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Debug\PA9_Cat_Apocalypse.exe
