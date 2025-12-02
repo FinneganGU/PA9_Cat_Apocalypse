@@ -135,10 +135,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="testScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.hpp" />
     <ClInclude Include="Player.hpp" />
+    <ClInclude Include="testScreen.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Sprites\cat_mf_flip.png" />

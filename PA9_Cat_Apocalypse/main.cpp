@@ -1,4 +1,5 @@
 #include "Player.hpp"
+#include "testScreen.hpp"
 
 int main()
 {
@@ -7,6 +8,11 @@ int main()
     window.setKeyRepeatEnabled(true);
     //sf::Texture texture("cat_nomf_flip.png"); // fix sprites not appearing
     //sf::Sprite player(texture);
+
+        // output to screen first
+    if (!runTestScreen(window))
+        return 0;       // user closed window early
+
     Player player({ 50,50 }, 0.5);
     player.setPosition({ 700,500 });
 
