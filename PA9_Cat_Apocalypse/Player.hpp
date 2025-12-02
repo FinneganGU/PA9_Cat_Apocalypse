@@ -7,35 +7,42 @@ class Player : public Character
 public:
 	Player(sf::Vector2f newSize, float newMoveSpeed) : Character(newSize, newMoveSpeed)
 	{
-		/*sf::Texture texture("cat_nomf_flip.png");
-		sf::Sprite player(texture);*/
+		direction = 0;
+		isOnGround = true;
 	}
 
 	void jump()
 	{
-		if (onGround = true)
+		if (isOnGround = true)
 		{
-			hitbox.move({ 0, -moveSpeed });
-			onGround = false;
+			hitbox.move({ direction * moveSpeed, -(moveSpeed * 5)});
+			isOnGround = false;
 		}
 	}
 
 	void moveLeft()
 	{
-		if(onGround = true)
+		if(isOnGround = true)
 		{
-			move({ -moveSpeed, 0 });
+			hitbox.move({ -moveSpeed, 0 });
 		}
 	}
 
 	void moveRight()
 	{
-		if (onGround = true)
+		if (isOnGround = true)
 		{
-			move({ moveSpeed, 0 });
+			hitbox.move({ moveSpeed, 0 });
 		}
 	}
 
+	bool getIsOnGround() const { return isOnGround; }
+	int getDirection() const { return direction; }
+
+	void setIsOnGround(const bool newIsOnGround) { isOnGround = newIsOnGround; }
+	void setDirection(const int newDirection) { direction = newDirection; }
+
 private:
-	sf::Texture texture;
+	bool isOnGround;
+	int direction;
 };
