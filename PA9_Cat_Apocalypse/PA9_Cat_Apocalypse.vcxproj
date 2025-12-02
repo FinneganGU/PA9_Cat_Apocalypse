@@ -135,10 +135,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="testScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.hpp" />
     <ClInclude Include="Player.hpp" />
+    <ClInclude Include="testScreen.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Sprites\cat_mf_flip.png" />
@@ -151,6 +153,9 @@
     <Image Include="Sprites\fox_nomf_flip.png" />
     <Image Include="Sprites\fox_nomf_noflip.png" />
     <Image Include="Sprites\landmine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
