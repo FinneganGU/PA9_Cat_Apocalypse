@@ -31,11 +31,11 @@ public:
 		hitbox.setPosition(newPosition);
 	}
 
-	int getX() {
+	float getX() {
 		return hitbox.getPosition().x;
 	}
 
-	int getY() {
+	float getY() {
 		return hitbox.getPosition().y;
 	}
 

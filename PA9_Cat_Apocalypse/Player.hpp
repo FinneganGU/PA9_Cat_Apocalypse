@@ -8,14 +8,14 @@ public:
 	Player(sf::Vector2f newSize, float newMoveSpeed) : Character(newSize, newMoveSpeed)
 	{
 		direction = 0;
-		isOnGround = true;
+		isOnGround = false;
 	}
 
 	void jump()
 	{
 		if (isOnGround = true)
 		{
-			hitbox.move({ direction * moveSpeed, -(moveSpeed * 5)});
+			hitbox.move({ direction * moveSpeed * 2, -(moveSpeed * 5)});
 			isOnGround = false;
 		}
 	}

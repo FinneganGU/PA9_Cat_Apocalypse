@@ -2,13 +2,14 @@
 #include "Player.hpp"
 #include "testScreen.hpp"
 
+sf::Vector2f defaultPosition = { 1920/2, 450 };
+
 int main()
 {
     // load textures
     const sf::Texture t1("Sprites/cat_mf_flip.png");
     const sf::Texture t2("Sprites/cat_mf_noflip.png");
-    sf::Texture t3;
-    t3.loadFromFile("Sprites/cat_nomf_flip.png");
+    const sf::Texture t3("Sprites/cat_nomf_flip.png");
     const sf::Texture t4("Sprites/cat_nomf_noflip.png");
 
     const sf::Texture t5("Sprites/fox_mf_flip.png");
@@ -27,7 +28,7 @@ int main()
         return 0;       // user closed window early
 
     Player player({ 50,50 }, 0.5);
-    player.setPosition({ 700, 450 });
+    player.setPosition(defaultPosition);
     player.getHitbox().setTexture(&t3);
 
     const int groundHeight = 500;
@@ -49,6 +50,10 @@ int main()
             player.setDirection(1);
             player.moveRight();
         }
+        else
+        {
+            player.setDirection(0);
+        }
 
         while (const std::optional event = window.pollEvent())
         {
@@ -56,13 +61,18 @@ int main()
                 window.close();
         }
 
-        if (player.getY() < groundHeight && !player.getIsOnGround())
+        if (player.getY() < groundHeight)
         {
             player.move({ 0,gravitySpeed });
         }
-        else if (player.getY() >= groundHeight)
+        else if (player.getY() == groundHeight)
         {
             player.setIsOnGround(true);
+        }
+
+        if (player.getX() > 1920 || player.getX() < 0)
+        {
+            player.setPosition(defaultPosition);
         }
         
         window.clear();
