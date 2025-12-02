@@ -1,15 +1,20 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
 
 class Character
 {
 public:
-	Character(sf::Vector2f newSize, float newMoveSpeed) {
+	Character(sf::Vector2f newSize, float newMoveSpeed)
+	{
 		hitbox.setSize(newSize);
-		hitbox.setFillColor(sf::Color::Blue);
+		size = newSize;
 		moveSpeed = newMoveSpeed;
-		onGround = true;
 	}
 
 	void drawTo(sf::RenderWindow& window) {
@@ -21,7 +26,8 @@ public:
 	}
 
 	// set the starting position of the character
-	void setPosition(sf::Vector2f newPosition) {
+	void setPosition(sf::Vector2f newPosition)
+	{
 		hitbox.setPosition(newPosition);
 	}
 
@@ -33,19 +39,21 @@ public:
 		return hitbox.getPosition().y;
 	}
 
-	float getMoveSpeed() { return moveSpeed; }
+	// getters
+	sf::RectangleShape getHitbox() const { return hitbox; }
+	sf::Vector2f getSize() const { return size; }
+	float getMoveSpeed() const { return moveSpeed; }
 
-	bool isOnGround() {
-		return onGround;
-	}
-
-	void setOnGround(bool newOnGround)
+	// setters
+	void setSize(const sf::Vector2f newSize) 
 	{
-		onGround = newOnGround;
+		hitbox.setSize(newSize);
+		size = newSize;
 	}
+	void setMoveSpeed(const float newMoveSpeed) { moveSpeed = newMoveSpeed; }
 
 protected:
 	sf::RectangleShape hitbox;
+	sf::Vector2f size;
 	float moveSpeed;
-	bool onGround;
 };
