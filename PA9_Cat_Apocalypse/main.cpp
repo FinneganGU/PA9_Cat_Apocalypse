@@ -69,10 +69,31 @@ int main()
         {
             player.setIsOnGround(true);
         }
-
-        if (player.getX() > 1920 || player.getX() < 0)
+           
+        //player collision template
+        //the empty field inside findIntersection() should 
+        if (player.getHitbox().getGlobalBounds().findIntersection())
         {
-            player.setPosition(defaultPosition);
+
+        }
+
+        //screen collision
+        //Left side collision
+        if (player.getX() < 0.f)
+        {
+            player.setPosition(sf::Vector2f(0.f, player.getY()));
+        }
+
+        //top side collision
+        if (player.getY() < 0.f)
+        {
+            player.setPosition(sf::Vector2f(player.getX(), 1.f));
+        }
+
+        //right side collision
+        if (player.getX() + player.getHitbox().getSize().x > 1920.f)
+        {
+            player.setPosition(sf::Vector2f(1920.f - player.getHitbox().getSize().x, player.getY()));
         }
         
         window.clear();
