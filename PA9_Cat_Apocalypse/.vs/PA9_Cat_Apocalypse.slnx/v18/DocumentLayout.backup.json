@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:testScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Character.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:Character.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:testScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Character.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:Character.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "testScreen.cpp",
               "DocumentMoniker": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.cpp",
               "RelativeDocumentMoniker": "testScreen.cpp",
               "ToolTip": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.cpp",
               "RelativeToolTip": "testScreen.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-02T03:05:02.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\readme.txt",
               "RelativeDocumentMoniker": "readme.txt",
@@ -88,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Character.hpp",
               "DocumentMoniker": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Character.hpp",
               "RelativeDocumentMoniker": "Character.hpp",
@@ -126,13 +126,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\Hans\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-21T21:33:03.466Z",
               "EditorCaption": ""

@@ -23,8 +23,8 @@ bool runTestScreen(sf::RenderWindow& window)
     // 3 messages
     std::vector<std::string> messages{
         "Welcome to the game of Cat Apocalypse\n\n Click the button below to continue...",
-        "Click again to continue... Message TBD",
-        "Final message. Game starting... Message TBD"
+        "Press the W key to jump\nPress the A key to move left\nPress the D key to move right\nPress the Space bar to shoot",
+        "Objective: survive as long as possible. \n\nGame starting"
     };
 
     int index = 0;
