@@ -1,8 +1,9 @@
-﻿  Player.cpp
-  main.cpp
+﻿  main.cpp
+  Player.cpp
+  testScreen.cpp
   Generating code
-  3 of 299 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
-    2 functions were new in current compilation
+  291 of 299 functions (97.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  PA9_Cat_Apocalypse.vcxproj -> C:\Users\finne\OneDrive\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Release\PA9_Cat_Apocalypse.exe
+  PA9_Cat_Apocalypse.vcxproj -> C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Release\PA9_Cat_Apocalypse.exe

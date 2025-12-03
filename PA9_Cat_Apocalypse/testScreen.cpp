@@ -13,9 +13,8 @@ bool runTestScreen(sf::RenderWindow& window)
     // Load font
     sf::Font font("C:/Windows/Fonts/arial.ttf");
 
-    // pPrepare text
+    // Prepare text
     sf::Text text(font);
-    //text.setFont(font);
     text.setString("");
     text.setCharacterSize(48);
     text.setFillColor(sf::Color::White);
