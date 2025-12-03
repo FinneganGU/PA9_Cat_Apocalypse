@@ -1,6 +1,4 @@
 #include "testScreen.hpp"
-#include <vector>
-#include <string>
 
 bool runTestScreen(sf::RenderWindow& window)
 {
@@ -24,7 +22,7 @@ bool runTestScreen(sf::RenderWindow& window)
     std::vector<std::string> messages{
         "Welcome to the game of Cat Apocalypse\n\n Click the button below to continue...",
         "Press the W key to jump\nPress the A key to move left\nPress the D key to move right\nPress the Space bar to shoot",
-        "Objective: survive as long as possible. \n\nGame starting"
+        "Objective: survive for 60 seconds! \n\nGame starting"
     };
 
     int index = 0;

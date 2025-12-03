@@ -34,8 +34,19 @@ int main()
     const int groundHeight = 500;
     const float gravitySpeed = 0.5;
 
+    //gameclock
+    sf::Clock gameClock;
+    sf::Font font("C:/Windows/Fonts/arial.ttf");
+
+    sf::Text timerText(font);
+    timerText.setCharacterSize(48);
+    timerText.setFillColor(sf::Color::White);
+    timerText.setPosition({50,50});
+    //
+
     while (window.isOpen())
     {
+
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
         {
             player.jump();
@@ -72,10 +83,10 @@ int main()
            
         //player collision template
         //the empty field inside findIntersection() should 
-        if (player.getHitbox().getGlobalBounds().findIntersection())
+ /*       if (player.getHitbox().getGlobalBounds().findIntersection())
         {
 
-        }
+        }*/
 
         //screen collision
         //Left side collision
@@ -96,9 +107,40 @@ int main()
             player.setPosition(sf::Vector2f(1920.f - player.getHitbox().getSize().x, player.getY()));
         }
         
+        //timer clock update
+        float elapsed = gameClock.getElapsedTime().asSeconds();
+
+        timerText.setString("Time: " + std::to_string((int)elapsed));
+
+        if (elapsed >= 60.f)
+        {
+            break; // jump to victory screen
+        }
+        //
+
         window.clear();
         player.drawTo(window);
+        window.draw(timerText); // draw timer to screen
         window.display();
     }
+
+    //timer victory 
+    sf::Text victory(font);
+    victory.setCharacterSize(80);
+    victory.setFillColor(sf::Color::Yellow);
+    victory.setString("VICTORY!");
+    victory.setPosition({700,400});
+
+    while (window.isOpen())
+    {
+        while (const std::optional event = window.pollEvent())
+            if (event->is<sf::Event::Closed>()) window.close();
+
+        window.clear();
+        window.draw(victory);
+        window.display();
+    }
+    //
+
     return 0;
 }

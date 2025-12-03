@@ -9,4 +9,4 @@ Press the W key to jump
 Press the A key to move left
 Press the D key to move right
 Press the Space bar to shoot
-Objective: survive as long as possible
+Objective: survive for 60 seconds!
