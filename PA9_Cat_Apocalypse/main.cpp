@@ -1,5 +1,6 @@
 #include "Character.hpp"
 #include "Player.hpp"
+#include "Enemy.hpp"
 #include "testScreen.hpp"
 
 
@@ -35,6 +36,12 @@ int main()
     Player player({ 50,50 }, 0.5);
     player.setPosition(defaultPosition);
     player.getHitbox().setTexture(&t3);
+
+    // Create enemy
+    Enemy enemy({ 50, 50 }, 0.2);  // Enemy 
+    enemy.setPosition({ 300, 500 });  // Start position
+    enemy.getHitbox().setFillColor(sf::Color::Red);  // Make enemy visible (color dosen't work)
+    enemy.setPatrolBounds(0, 1920);  // Patrol
 
     //gameclock
     sf::Clock gameClock;
@@ -91,6 +98,14 @@ int main()
         {
 
         }*/
+        // Update enemy position
+        enemy.update();
+        // Check collision with enemy
+        if (player.getHitbox().getGlobalBounds().findIntersection(enemy.getHitbox().getGlobalBounds()))
+        {
+            // Reset player position on collision
+            player.setPosition(defaultPosition);
+        }
 
         //screen collision
         //Left side collision
@@ -124,6 +139,7 @@ int main()
 
         window.clear();
         player.drawTo(window);
+        enemy.drawTo(window);  // Draw the enemy
         window.draw(timerText); // draw timer to screen
         window.display();
     }
