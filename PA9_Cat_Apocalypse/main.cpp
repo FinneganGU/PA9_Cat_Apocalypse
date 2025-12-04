@@ -2,7 +2,7 @@
 #include "Player.hpp"
 #include "testScreen.hpp"
 
-sf::Vector2f defaultPosition = { 1920/2, 450 };
+
 
 int main()
 {
@@ -27,12 +27,14 @@ int main()
     if (!runTestScreen(window))
         return 0;       // user closed window early
 
+    sf::Vector2f defaultPosition = { 1920 / 2, 450 };
+    const int groundHeight = 500;
+    const float gravitySpeed = 0.5;
+    int frameCount = 0;
+
     Player player({ 50,50 }, 0.5);
     player.setPosition(defaultPosition);
     player.getHitbox().setTexture(&t3);
-
-    const int groundHeight = 500;
-    const float gravitySpeed = 0.5;
 
     //gameclock
     sf::Clock gameClock;
@@ -46,10 +48,11 @@ int main()
 
     while (window.isOpen())
     {
+        frameCount++;
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
         {
-            player.jump();
+            player.jump(frameCount);
         }
         else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
         {
@@ -79,6 +82,7 @@ int main()
         else if (player.getY() == groundHeight)
         {
             player.setIsOnGround(true);
+            frameCount = 0;
         }
            
         //player collision template

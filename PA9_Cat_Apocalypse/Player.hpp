@@ -5,40 +5,18 @@
 class Player : public Character
 {
 public:
-	Player(sf::Vector2f newSize, float newMoveSpeed) : Character(newSize, newMoveSpeed)
-	{
-		direction = 0;
-		isOnGround = false;
-	}
+	Player(sf::Vector2f newSize, float newMoveSpeed);
 
-	void jump()
-	{
-		if (isOnGround = true)
-		{
-			hitbox.move({ direction * moveSpeed * 2, -(moveSpeed * 5)});
-			isOnGround = false;
-		}
-	}
+	// movement controls
+	void jump(int frameCount);
+	void moveLeft();
+	void moveRight();
 
-	void moveLeft()
-	{
-		if(isOnGround = true)
-		{
-			hitbox.move({ -moveSpeed, 0 });
-		}
-	}
-
-	void moveRight()
-	{
-		if (isOnGround = true)
-		{
-			hitbox.move({ moveSpeed, 0 });
-		}
-	}
-
+	// getters
 	bool getIsOnGround() const { return isOnGround; }
 	int getDirection() const { return direction; }
 
+	// setters
 	void setIsOnGround(const bool newIsOnGround) { isOnGround = newIsOnGround; }
 	void setDirection(const int newDirection) { direction = newDirection; }
 
