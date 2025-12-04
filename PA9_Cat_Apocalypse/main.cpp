@@ -2,9 +2,17 @@
 #include "Player.hpp"
 #include "Enemy.hpp"
 #include "testScreen.hpp"
+#include "testClass.hpp"
 
 int main()
 {
+    //test code for 5 total tests
+    runTestTextures();
+    runTestEnemy();
+    runTestJump();
+    runTestPatrol();
+    runTestDistance();
+
     // load textures
     const sf::Texture t1("Sprites/cat_mf_flip.png");
     const sf::Texture t2("Sprites/cat_mf_noflip.png");
@@ -36,7 +44,7 @@ int main()
     player.getHitbox().setTexture(&t3);
 
     // Create enemy
-    Enemy enemy({ 50, 50 }, 0.2);  // Enemy 
+    Enemy enemy({ 50, 50 }, 0.1);  // Enemy 
     enemy.setPosition({ 300, 500 });  // Start position
     enemy.getHitbox().setFillColor(sf::Color::Red);  // Make enemy visible (color dosen't work)
     enemy.setPatrolBounds(0, 1920);  // Patrol

@@ -1,12 +1,6 @@
-﻿  Enemy.cpp
-  main.cpp
-C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\main.cpp(39,29): warning C4305: 'argument': truncation from 'double' to 'float'
-  Player.cpp
-  testClass.cpp
-  testScreen.cpp
-  Generating code
-  354 of 354 functions (100.0%) were compiled.
+﻿  Generating code
+  1 of 372 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    3 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   PA9_Cat_Apocalypse.vcxproj -> C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Release\PA9_Cat_Apocalypse.exe

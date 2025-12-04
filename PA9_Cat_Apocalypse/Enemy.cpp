@@ -12,6 +12,10 @@ Enemy::Enemy(sf::Vector2f newSize, float newMoveSpeed)
     maxDistanceFromStart = 0;
 }
 
+int Enemy::getDirection(Enemy direction) {
+    return direction.direction;
+}
+
 void Enemy::update()
 {
     // Move the enemy based on direction

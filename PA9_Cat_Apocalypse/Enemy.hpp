@@ -1,5 +1,4 @@
-#ifndef ENEMY_HPP
-#define ENEMY_HPP
+#pragma once
 
 #include "Character.hpp"
 
@@ -9,6 +8,8 @@ class Enemy : public Character
 public:
     Enemy(sf::Vector2f newSize, float newMoveSpeed);
 
+    //return the direction of the enemy 1 for right, -1 for left as int
+    int getDirection(Enemy direction); 
     void update();  // update enemy movement
     void setPatrolBounds(float left, float right);  // set enemy patrols
     void setPatrolDistance(float distance);  // Set how far enemy moves before turning
@@ -22,5 +23,3 @@ private:
     float patrolDistance;
     float maxDistanceFromStart;
 };
-
-#endif
