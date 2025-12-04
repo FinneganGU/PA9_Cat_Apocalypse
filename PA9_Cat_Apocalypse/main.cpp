@@ -54,13 +54,14 @@ int main()
     bullet.setPosition(player.getHitbox().getPosition() + playerOffset);
 
     // Create enemy
-    Enemy enemy({ 50, 50 }, 0.1);  // Enemy 
+    Enemy enemy({ 50, 50 }, 0.2);  // Enemy 
     enemy.setPosition({ 300, 500 });  // Start position
     enemy.getHitbox().setFillColor(sf::Color::Red);  // Make enemy visible (color dosen't work)
     enemy.setPatrolBounds(0, 1920);  // Patrol
 
     //gameclock
     sf::Clock gameClock;
+    sf::Clock gameClock2;
     sf::Font font("C:/Windows/Fonts/arial.ttf");
 
     sf::Text timerText(font);
@@ -73,7 +74,7 @@ int main()
     {
         frameCount++;
 
-        float dt = gameClock.restart().asSeconds();
+        float dt = gameClock2.restart().asSeconds();
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
         {
@@ -89,11 +90,20 @@ int main()
             player.setDirection(1);
             player.moveRight();
         }
+        else
+        {
+            player.setDirection(0);
+        }
+
         //bullet logic
-        else if (!active && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
+        if (!active && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
         {
             active = true;
             if (player.getDirection() == 0)
+            {
+                bulletDir = 1;
+            }
+            else if(player.getDirection() == 1)
             {
                 bulletDir = 1;
             }
@@ -103,11 +113,6 @@ int main()
             }
             bullet.setPosition({ player.getHitbox().getPosition() + playerOffset });
         }
-        else
-        {
-            player.setDirection(0);
-        }
-
 
         while (const std::optional event = window.pollEvent())
         {
@@ -138,10 +143,10 @@ int main()
 
         //player collision template
         //the empty field inside findIntersection() should 
- /*       if (player.getHitbox().getGlobalBounds().findIntersection())
+        if (enemy.getHitbox().getGlobalBounds().findIntersection(bullet.getGlobalBounds()))
         {
-
-        }*/
+            enemy.setPosition({ 0,500 });
+        }
         // Update enemy position
         enemy.update();
         // Check collision with enemy

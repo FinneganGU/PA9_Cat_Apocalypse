@@ -1,6 +1,9 @@
-﻿  Generating code
-  1 of 372 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+﻿  main.cpp
+C:\Users\finne\OneDrive\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\main.cpp(39,32): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\finne\OneDrive\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\main.cpp(57,29): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating code
+  1 of 374 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  PA9_Cat_Apocalypse.vcxproj -> C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Release\PA9_Cat_Apocalypse.exe
+  PA9_Cat_Apocalypse.vcxproj -> C:\Users\finne\OneDrive\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Release\PA9_Cat_Apocalypse.exe
