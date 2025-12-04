@@ -20,6 +20,7 @@ int main()
     const sf::Texture t4("Sprites/cat_mf_noflip.png");
     const sf::Texture t5("Sprites/fox_nomf_flip.png");
     const sf::Texture t6("Sprites/fox_nomf_noflip.png");
+    // background is from here https://edermunizz.itch.io/free-pixel-art-forest
     const sf::Texture t7("Sprites/background.png");
     const sf::Texture t8("Sprites/explosion.png");
 

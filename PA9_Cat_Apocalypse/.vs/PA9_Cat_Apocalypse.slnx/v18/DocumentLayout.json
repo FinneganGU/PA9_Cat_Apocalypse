@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:testClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:testScreen.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:testScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:testScreen.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Character.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:Character.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED6493A6-BEF0-49A9-B5FF-F4F4255BCF11}|PA9_Cat_Apocalypse.vcxproj|C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testClass.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Enemy.cpp",
               "RelativeDocumentMoniker": "Enemy.cpp",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "testScreen.hpp",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testScreen.hpp",
               "RelativeDocumentMoniker": "testScreen.hpp",
@@ -98,11 +98,12 @@
               "RelativeToolTip": "testScreen.cpp",
               "ViewState": "AgIAABwAAAAAAAAAAAAqwDgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-04T05:11:13.313Z"
+              "WhenOpened": "2025-12-04T05:11:13.313Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\readme.txt",
               "RelativeDocumentMoniker": "readme.txt",
@@ -110,11 +111,12 @@
               "RelativeToolTip": "readme.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-12-04T05:11:13.314Z"
+              "WhenOpened": "2025-12-04T05:11:13.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Character.hpp",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Character.hpp",
               "RelativeDocumentMoniker": "Character.hpp",
@@ -126,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
@@ -144,7 +146,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACIAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-04T05:11:13.317Z",
               "EditorCaption": ""
@@ -157,13 +159,14 @@
               "RelativeDocumentMoniker": "testClass.cpp",
               "ToolTip": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\testClass.cpp",
               "RelativeToolTip": "testClass.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAawA0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-04T05:11:13.384Z"
+              "WhenOpened": "2025-12-04T05:11:13.384Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Enemy.hpp",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Enemy.hpp",
               "RelativeDocumentMoniker": "Enemy.hpp",
@@ -187,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Player.hpp",
               "DocumentMoniker": "C:\\Users\\finne\\OneDrive\\Documents\\GitHub\\PA9_Cat_Apocalypse\\PA9_Cat_Apocalypse\\Player.hpp",
               "RelativeDocumentMoniker": "Player.hpp",

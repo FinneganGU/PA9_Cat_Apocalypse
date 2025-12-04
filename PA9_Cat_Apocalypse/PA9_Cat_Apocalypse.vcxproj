@@ -148,16 +148,14 @@
     <ClInclude Include="testScreen.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Sprites\background.png" />
     <Image Include="Sprites\cat_mf_flip.png" />
     <Image Include="Sprites\cat_mf_noflip.png" />
     <Image Include="Sprites\cat_nomf_flip.png" />
     <Image Include="Sprites\cat_nomf_noflip.png" />
     <Image Include="Sprites\explosion.png" />
-    <Image Include="Sprites\fox_mf_flip.png" />
-    <Image Include="Sprites\fox_mf_noflip.png" />
     <Image Include="Sprites\fox_nomf_flip.png" />
     <Image Include="Sprites\fox_nomf_noflip.png" />
-    <Image Include="Sprites\landmine.png" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
