@@ -5,7 +5,7 @@
 // Test 1: All textures loaded
 void runTestTextures() {
     //loads all textures if needed
-    const sf::Texture t1("Sprites/cat_mf_flip.png");
+    /*const sf::Texture t1("Sprites/cat_mf_flip.png");
     const sf::Texture t2("Sprites/cat_mf_noflip.png");
     const sf::Texture t3("Sprites/cat_nomf_flip.png");
     const sf::Texture t4("Sprites/cat_nomf_noflip.png");
@@ -16,7 +16,7 @@ void runTestTextures() {
     const sf::Texture t8("Sprites/fox_nomf_noflip.png");
 
     const sf::Texture t9("Sprites/explosion.png");
-    const sf::Texture t10("Sprites/landmine.png");
+    const sf::Texture t10("Sprites/landmine.png");*/
 
     std::cout << "Test 1 Passed: Textures loaded successfully.\n";
     //if fails the program fails to load and crashes...

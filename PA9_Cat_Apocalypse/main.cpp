@@ -14,18 +14,24 @@ int main()
     runTestDistance();
 
     // load textures
-    const sf::Texture t1("Sprites/cat_mf_flip.png");
-    const sf::Texture t2("Sprites/cat_mf_noflip.png");
+    /*const sf::Texture t1("Sprites/cat_mf_flip.png");
+    const sf::Texture t2("Sprites/cat_mf_noflip.png");*/
     const sf::Texture t3("Sprites/cat_nomf_flip.png");
     const sf::Texture t4("Sprites/cat_nomf_noflip.png");
 
-    const sf::Texture t5("Sprites/fox_mf_flip.png");
-    const sf::Texture t6("Sprites/fox_mf_noflip.png");
+    /*const sf::Texture t5("Sprites/fox_mf_flip.png");
+    const sf::Texture t6("Sprites/fox_mf_noflip.png");*/
     const sf::Texture t7("Sprites/fox_nomf_flip.png");
     const sf::Texture t8("Sprites/fox_nomf_noflip.png");
 
-    const sf::Texture t9("Sprites/explosion.png");
-    const sf::Texture t10("Sprites/landmine.png");
+    /*const sf::Texture t9("Sprites/explosion.png");
+    const sf::Texture t10("Sprites/landmine.png");*/
+
+    sf::Sprite cat1(t3);
+    sf::Sprite cat2(t4);
+    sf::Sprite fox1(t7);
+    sf::Sprite fox2(t8);
+
 
     sf::RenderWindow window(sf::VideoMode({ 1920, 1080 }), "SFML works!");
     window.setKeyRepeatEnabled(false);
@@ -39,9 +45,8 @@ int main()
     const float gravitySpeed = 0.5;
     int frameCount = 0;
 
-    Player player({ 50,50 }, 0.5);
+    Player player({ 70,50 }, 0.5);
     player.setPosition(defaultPosition);
-    player.getHitbox().setTexture(&t3);
 
     //bullet components
     float bulletDir = 1.f;
@@ -54,7 +59,7 @@ int main()
     bullet.setPosition(player.getHitbox().getPosition() + playerOffset);
 
     // Create enemy
-    Enemy enemy({ 50, 50 }, 0.2);  // Enemy 
+    Enemy enemy({ 70, 50 }, 0.2);  // Enemy 
     enemy.setPosition({ 300, 500 });  // Start position
     enemy.getHitbox().setFillColor(sf::Color::Red);  // Make enemy visible (color dosen't work)
     enemy.setPatrolBounds(0, 1920);  // Patrol
@@ -73,6 +78,9 @@ int main()
     while (window.isOpen())
     {
         frameCount++;
+
+        cat1.setPosition({ player.getX(),player.getY() });
+        cat2.setPosition({ player.getX(),player.getY() });
 
         float dt = gameClock2.restart().asSeconds();
 
@@ -210,7 +218,15 @@ int main()
         {
             window.draw(bullet);
         }
-        player.drawTo(window);
+        if (player.getDirection() == -1)
+        {
+            window.draw(cat2);
+        }
+        else
+        {
+            window.draw(cat1);
+        }
+        
         enemy.drawTo(window);  // Draw the enemy
         window.draw(timerText); // draw timer to screen
         window.display();
