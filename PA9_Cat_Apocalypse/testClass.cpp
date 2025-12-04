@@ -48,7 +48,7 @@ void runTestPatrol() {
     enemy.setPosition({ 100, 0 });
     enemy.setPatrolBounds(50, 150);
     enemy.update(); // Move left initially
-    if (enemy.getDirection(enemy) == -1)
+    if (enemy.getDirection() == -1)
         std::cout << "Test 4 Passed: Enemy moves right within bounds.\n";
     else
         std::cout << "Test 4 Failed: Enemy direction incorrect.\n";
@@ -56,7 +56,7 @@ void runTestPatrol() {
     // Simulate moving to right bound
     enemy.setPosition({ 150, 0 });
     enemy.update(); // Should flip direction
-    if (enemy.getDirection(enemy) == -1)
+    if (enemy.getDirection() == -1)
         std::cout << "Test 4 Passed: Enemy flips at right bound.\n";
     else
         std::cout << "Test 4 Failed: Enemy did not flip at bound.\n";
@@ -68,7 +68,7 @@ void runTestDistance() {
     enemy.setPosition({ 100, 0 });
     enemy.setPatrolDistance(50);
     enemy.update(); // Move right initially
-    if (enemy.getDirection(enemy) == 1)
+    if (enemy.getDirection() == 1)
         std::cout << "Test 5 Passed: Enemy moves right by patrol distance.\n";
     else
         std::cout << "Test 5 Failed: Enemy direction incorrect.\n";
@@ -76,7 +76,7 @@ void runTestDistance() {
     // Simulate traveling max distance
     enemy.setPosition({ 150, 0 }); // startingX + maxDistanceFromStart
     enemy.update(); // Should flip direction
-    if (enemy.getDirection(enemy) == -1)
+    if (enemy.getDirection() == -1)
         std::cout << "Test 5 Passed: Enemy flips after max patrol distance.\n";
     else
         std::cout << "Test 5 Failed: Enemy did not flip at max distance.\n";
