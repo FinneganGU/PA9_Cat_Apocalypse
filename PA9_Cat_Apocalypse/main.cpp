@@ -14,26 +14,25 @@ int main()
     runTestDistance();
 
     // load textures
-    /*const sf::Texture t1("Sprites/cat_mf_flip.png");
-    const sf::Texture t2("Sprites/cat_mf_noflip.png");*/
-    const sf::Texture t3("Sprites/cat_nomf_flip.png");
-    const sf::Texture t4("Sprites/cat_nomf_noflip.png");
+    const sf::Texture t1("Sprites/cat_nomf_flip.png");
+    const sf::Texture t2("Sprites/cat_nomf_noflip.png");
+    const sf::Texture t3("Sprites/cat_mf_flip.png");
+    const sf::Texture t4("Sprites/cat_mf_noflip.png");
+    const sf::Texture t5("Sprites/fox_nomf_flip.png");
+    const sf::Texture t6("Sprites/fox_nomf_noflip.png");
+    const sf::Texture t7("Sprites/background.png");
+    const sf::Texture t8("Sprites/explosion.png");
 
-    /*const sf::Texture t5("Sprites/fox_mf_flip.png");
-    const sf::Texture t6("Sprites/fox_mf_noflip.png");*/
-    const sf::Texture t7("Sprites/fox_nomf_flip.png");
-    const sf::Texture t8("Sprites/fox_nomf_noflip.png");
+    sf::Sprite cat1(t1);
+    sf::Sprite cat2(t2);
+    sf::Sprite cat3(t3);
+    sf::Sprite cat4(t4);
+    sf::Sprite fox1(t5);
+    sf::Sprite fox2(t6);
+    sf::Sprite background(t7);
+    sf::Sprite explosion(t8);
 
-    /*const sf::Texture t9("Sprites/explosion.png");
-    const sf::Texture t10("Sprites/landmine.png");*/
-
-    sf::Sprite cat1(t3);
-    sf::Sprite cat2(t4);
-    sf::Sprite fox1(t7);
-    sf::Sprite fox2(t8);
-
-
-    sf::RenderWindow window(sf::VideoMode({ 1920, 1080 }), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode({ 1920, 1080 }), "Cat Apocalypse ver 1.0");
     window.setKeyRepeatEnabled(false);
 
     // output to screen first
@@ -41,7 +40,7 @@ int main()
         return 0;       // user closed window early
 
     sf::Vector2f defaultPosition = { 1920 / 2, 450 };
-    const int groundHeight = 500;
+    const int groundHeight = 875;
     const float gravitySpeed = 0.5;
     int frameCount = 0;
 
@@ -59,8 +58,8 @@ int main()
     bullet.setPosition(player.getHitbox().getPosition() + playerOffset);
 
     // Create enemy
-    Enemy enemy({ 70, 50 }, 0.2);  // Enemy 
-    enemy.setPosition({ 300, 500 });  // Start position
+    Enemy enemy({ 70, 50 }, 0.5);  // Enemy 
+    enemy.setPosition({ 300, 875 });  // Start position
     enemy.getHitbox().setFillColor(sf::Color::Red);  // Make enemy visible (color dosen't work)
     enemy.setPatrolBounds(0, 1920);  // Patrol
 
@@ -79,8 +78,15 @@ int main()
     {
         frameCount++;
 
+        //sprite tracking the hitbox
         cat1.setPosition({ player.getX(),player.getY() });
         cat2.setPosition({ player.getX(),player.getY() });
+        cat3.setPosition({ player.getX(),player.getY() });
+        cat4.setPosition({ player.getX(),player.getY() });
+
+        fox1.setPosition({ enemy.getX(),enemy.getY() });
+        fox2.setPosition({ enemy.getX(),enemy.getY() });
+        explosion.setPosition({ enemy.getX(),enemy.getY() });
 
         float dt = gameClock2.restart().asSeconds();
 
@@ -153,7 +159,8 @@ int main()
         //the empty field inside findIntersection() should 
         if (enemy.getHitbox().getGlobalBounds().findIntersection(bullet.getGlobalBounds()))
         {
-            enemy.setPosition({ 0,500 });
+            window.draw(explosion);
+            enemy.setPosition({ 0,875 });
         }
         // Update enemy position
         enemy.update();
@@ -214,11 +221,20 @@ int main()
 
         window.clear();
         //killing loose bullets
+        window.draw(background);
         if (active)
         {
+            if (player.getDirection() == -1)
+            {
+                window.draw(cat4);
+            }
+            else
+            {
+                window.draw(cat3);
+            }
             window.draw(bullet);
         }
-        if (player.getDirection() == -1)
+        else if (player.getDirection() == -1)
         {
             window.draw(cat2);
         }
@@ -227,7 +243,14 @@ int main()
             window.draw(cat1);
         }
         
-        enemy.drawTo(window);  // Draw the enemy
+        if (enemy.getDirection() == -1)
+        {
+            window.draw(fox2);
+        }
+        else
+        {
+            window.draw(fox1);
+        }
         window.draw(timerText); // draw timer to screen
         window.display();
     }
