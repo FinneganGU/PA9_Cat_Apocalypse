@@ -28,9 +28,9 @@ int main()
     const sf::Texture t10("Sprites/landmine.png");
 
     sf::RenderWindow window(sf::VideoMode({ 1920, 1080 }), "SFML works!");
-    //window.setKeyRepeatEnabled(true);
+    window.setKeyRepeatEnabled(false);
 
-        // output to screen first
+    // output to screen first
     if (!runTestScreen(window))
         return 0;       // user closed window early
 
@@ -42,6 +42,16 @@ int main()
     Player player({ 50,50 }, 0.5);
     player.setPosition(defaultPosition);
     player.getHitbox().setTexture(&t3);
+
+    //bullet components
+    float bulletDir = 1.f;
+    bool active = false;
+    sf::Vector2f playerOffset = { 60.f, 25.f };
+    float velocity = 1000.f;
+    float radius = 10.f;
+    sf::CircleShape bullet(radius);
+    bullet.setOrigin({ radius, radius });
+    bullet.setPosition(player.getHitbox().getPosition() + playerOffset);
 
     // Create enemy
     Enemy enemy({ 50, 50 }, 0.1);  // Enemy 
@@ -56,12 +66,14 @@ int main()
     sf::Text timerText(font);
     timerText.setCharacterSize(48);
     timerText.setFillColor(sf::Color::White);
-    timerText.setPosition({50,50});
+    timerText.setPosition({ 50,50 });
     //
 
     while (window.isOpen())
     {
         frameCount++;
+
+        float dt = gameClock.restart().asSeconds();
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
         {
@@ -77,15 +89,41 @@ int main()
             player.setDirection(1);
             player.moveRight();
         }
+        //bullet logic
+        else if (!active && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
+        {
+            active = true;
+            if (player.getDirection() == 0)
+            {
+                bulletDir = 1;
+            }
+            else
+            {
+                bulletDir = -1;
+            }
+            bullet.setPosition({ player.getHitbox().getPosition() + playerOffset });
+        }
         else
         {
             player.setDirection(0);
         }
 
+
         while (const std::optional event = window.pollEvent())
         {
             if (event->is<sf::Event::Closed>())
                 window.close();
+        }
+
+        //additional bullet logic
+        if (active)
+        {
+            bullet.move({ velocity * bulletDir * dt, 0.f });
+
+            if (bullet.getPosition().x >= 1920.f + radius || bullet.getPosition().x < -radius)
+            {
+                active = false;
+            }
         }
 
         if (player.getY() < groundHeight)
@@ -97,7 +135,7 @@ int main()
             player.setIsOnGround(true);
             frameCount = 0;
         }
-           
+
         //player collision template
         //the empty field inside findIntersection() should 
  /*       if (player.getHitbox().getGlobalBounds().findIntersection())
@@ -149,7 +187,7 @@ int main()
         {
             player.setPosition(sf::Vector2f(1920.f - player.getHitbox().getSize().x, player.getY()));
         }
-        
+
         //timer clock update
         float elapsed = gameClock.getElapsedTime().asSeconds();
 
@@ -162,6 +200,11 @@ int main()
         //
 
         window.clear();
+        //killing loose bullets
+        if (active)
+        {
+            window.draw(bullet);
+        }
         player.drawTo(window);
         enemy.drawTo(window);  // Draw the enemy
         window.draw(timerText); // draw timer to screen
@@ -173,7 +216,7 @@ int main()
     victory.setCharacterSize(80);
     victory.setFillColor(sf::Color::Yellow);
     victory.setString("VICTORY!");
-    victory.setPosition({700,400});
+    victory.setPosition({ 700,400 });
 
     while (window.isOpen())
     {
