@@ -10,3 +10,6 @@ Press the A key to move left
 Press the D key to move right
 Press the Space bar to shoot
 Objective: survive for 60 seconds!
+
+Requires SFML 3.0.2 in "C:\SFML-3.0.2"
+In addition visual studio 2026 community is required to run the solution in release mode
