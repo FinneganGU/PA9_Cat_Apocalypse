@@ -1,4 +1,0 @@
-﻿  test.cpp
-C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\test.cpp(145,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\test.cpp(151,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  PA9_Cat_Apocalypse.vcxproj -> C:\Users\Hans\Documents\GitHub\PA9_Cat_Apocalypse\PA9_Cat_Apocalypse\x64\Debug\PA9_Cat_Apocalypse.exe
