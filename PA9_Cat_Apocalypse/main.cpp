@@ -3,8 +3,6 @@
 #include "Enemy.hpp"
 #include "testScreen.hpp"
 
-
-
 int main()
 {
     // load textures
@@ -104,7 +102,25 @@ int main()
         if (player.getHitbox().getGlobalBounds().findIntersection(enemy.getHitbox().getGlobalBounds()))
         {
             // Reset player position on collision
-            player.setPosition(defaultPosition);
+               //timer victory - changed to game over screen
+            sf::Text victory(font);
+            victory.setCharacterSize(80);
+            victory.setFillColor(sf::Color::Red);
+            victory.setString("Game Over");
+            victory.setPosition({ 700,400 });
+
+            while (window.isOpen())
+            {
+                while (const std::optional event = window.pollEvent())
+                    if (event->is<sf::Event::Closed>()) window.close();
+
+                window.clear();
+                window.draw(victory);
+                window.display();
+            }
+            //
+
+            return 0;
         }
 
         //screen collision
